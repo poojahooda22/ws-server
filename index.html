@@ -42,7 +42,7 @@
     const input = document.getElementById('input');
     const messages = document.getElementById('messages');
 
-  form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', (e) => {
     e.preventDefault();
     if (input.value) {
       socket.emit('chat message', input.value);
